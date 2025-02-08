@@ -1,0 +1,295 @@
+---
+title: "**Set Theory Mathematical Model of the Resonance Theory of Consciousness**"
+#date: "`r Sys.Date()`"
+# format:
+#   jasa-pdf:
+#     keep-tex: true  
+#     journal:
+#       blinded: false
+#   jasa-html: default
+date: last-modified
+author:
+  - name: Edward F. Hillenaar
+    acknowledgements: | 
+      The authors gratefully acknowledge _please remember to list all relevant funding sources in the non-anonymized (unblinded) version_.
+    affiliations:
+      - name: Total Health Foundation
+        department: Philosophy | Psychology | Research
+abstract: |
+  The text of your abstract. 200 or fewer words.
+keywords:
+  - 3 to 6 keywords
+  - that do not appear in the title
+#editor: 
+  #markdown: 
+    #wrap: sentence
+format: 
+  html:
+    css: styles.css
+#editor: visual
+# execute: 
+#   echo: true
+bibliography: bibliography.bib
+nocite: |
+  @*
+---
+
+![Source: https://www.the-scientist.com/tag/consciousness](vibration3.png){fig-align="center"}
+
+## **Introduction**
+
+The Resonance Theory of Consciousness (RTC) proposes that the brain functions as a modulated reconstruction wave passing through a holographic field [@Robbins2017d; @Robbins2017g; @Robbins2017c] of actual occasions [@Whitehead1929; @Whitehead1926]. This model aligns with Henri Bergson’s metaphysical theory of consciousness [@Bergson1922; @Bergson1911] and challenges traditional notions of perception and time. In this document, we develop a Set-Theory Mathematical Model for RTC and illustrate it using R-code visualizations.
+
+### **Set-Theory Mathematical Model**
+
+**Definitions**
+
+1.  **Experience Set (**$E$): A collection of all possible integral experiences over time.
+
+2.  **Perception Set (**$P$): The derivative of the Experience Set, capturing discrete moments of perception.
+
+3.  **Brain Modulation Function (**$B$): A function that reconstructs integral experience as it interacts with the holographic field.
+
+4.  **Field Function (**$F$): The underlying vibrational structure of actual occasions in the holographic field.
+
+### **Mathematical Representation**
+
+We define the integral experience as:
+
+$$
+E(t)=B(t)×F(t)
+$$
+
+where ;
+
+$E(t)$ is the experience at time $t$, $B(t)$ represents brain modulation, and $F(t)$ represents the field vibrations.
+
+The perception function is then given by the derivative:
+
+$$
+P(t) = \frac{dE}{dt}
+$$
+
+Since RCT posits that perception and time are identical sets, the traditional notion of time as an independent variable is redundant. Instead, perception itself serves as the basis for structuring experiences.
+
+### **Experience as Integral**
+
+In the RCT model, the pure experience $E(t)$ is the result of the interaction between the brain's modulation wave $B(t)$ and the holographic field of actual occasions $F(t)$. So, the experience is the integral of these interactions, forming the foundational, undifferentiated state of consciousness. This can be mathematically expressed as:
+
+$$
+E(t) = B(t) \times F(t)
+$$
+
+where:
+
+$E(t)$ represents the pure experience at time $t$, which is the integral experience. $B(t)$ represents the brain's modulated wave at time $t$, capturing the dynamism of brain activity over time. $F(t)$ represents the holographic field of actual occasions at time $t$, capturing the vibrational modes and actual occasions underlying reality. In RTC, experience $E(t)$ is not perception yet. It is a fundamental, pre-perceptual experience from which perceptions will later emerge as derivatives.
+
+### **Derivative Perceptions as Functions of Experience**
+
+Once experience $E(t)$ is formed through the interaction of the brain's wave and the holographic field, perception $P(t)$ can be considered a derivative of the total experience. This is akin to how a derivative represents the rate of change of an integral. Thus, perception is a function that emerges from the underlying experience and is dependent on the frequency and modulation of the brain’s wave. We can model perception $P(t)$ as:
+
+$$
+P(t) = \frac{d}{dt}E(t) = \frac{d}{dt}(B(t) \times F(t))
+$$
+
+Here, $P(t)$ represents the derivative perception at time $t$, which arises from the change in experience over time. This means that perception emerges from the underlying dynamic experience that results from the modulation of brain waves through the holographic field.
+
+### **Perception as a Time-Dependent Function of Experience**
+
+The perception set $P$ evolves over time as a function of the modulation of brain waves and the vibrational field. Since the brain's interaction with the holographic field is time-dependent, the perception at any given moment is determined by how the brain's wave modulates through the vibrational patterns of the holographic field. Thus, we can express this dynamic relation as:
+
+$$
+P(t) = \left(\frac{d}{dt}(B(t) \times F(t))\right)
+$$
+
+where:
+
+$B(t)$ represents the wave function of the brain at time $t$. $F(t)$ represents the vibrational field of actual occasions at time $t$. The derivative operation indicates how the perception $P(t)$ evolves from the integral experience.
+
+### **Time-Dependent Modulation and Frequency**
+
+According to the RTC model, the perception of matter and form is a function of the frequency of the brain’s modulated wave. The perception is not static but is instead time-dependent, changing as the brain modulates through the holographic field at different frequencies. To express this, we introduce a frequency modulation function $f_{mod}(t)$, which modulates the experience $E(t)$ as it evolves over time. This means that the brain’s interaction with the holographic field is affected by how the brain changes its frequency modulation. Thus, the corrected relationship for perception over time becomes:
+
+$$
+P(t) = \left(\frac{d}{dt}(E(t) \times f_{mod}(t))\right)
+$$
+
+where:
+
+• $E(t)$ is the integral experience as defined earlier, $f_{mod}(t)$ is the frequency modulation function, which determines how the brain's wave frequency changes over time. This dynamic relationship explains how perception is a time-dependent derivative of the underlying, integrated experience.
+
+### **Summary of the Set-Theory Model of RTC**
+
+1.  **Experience** $E(t)$ as the Integral: The pure experience $E(t)$ arises from the interaction of the brain’s wave $B(t)$ and the holographic field $F(t)$, representing the integral experience.
+
+$$
+E(t) = B(t) \times F(t)
+$$
+
+where $E(t)$ is the undifferentiated experience that is the base of perception.
+
+2.  **Perception** $P(t)$ as the Derivative of Experience: The perception $P(t)$ arises as the derivative of the integral experience, which reflects the dynamic change of experience over time.
+
+$$
+P(t) = \frac{d}{dt}(B(t) \times F(t))
+$$
+
+Perception emerges as a result of the brain’s modulation and its interaction with the holographic field.
+
+3.  **Frequency Modulation and Time-Dependent Perception**: The modulation of the brain’s wave through the holographic field is affected by the frequency $f_{mod}(t)$, which determines how form and matter are perceived at different frequencies.
+
+$$
+P(t) = \frac{d}{dt}(E(t) \times f_{mod}(t))
+$$
+
+This model reflects that experience is the foundational integral, and perception is the derivative of this experience over time. This aligns with the theory that perception is a time-dependent derivative of an underlying integral experience, solving the Hard Problem of Consciousness by explaining how qualia and perceptions emerge dynamically from this foundational interaction.
+
+### **Perception is Time in the Resonance Theory of Consciousness**
+
+To address the question of whether there is a difference between the Perception set $P(t)$ and time $t$, I need to show that both concepts are not distinct entities in the Resonance Theory of Consciousness (RTC) and that introducing a separate "time" set in addition to the perception set is unnecessary and redundant.
+
+**Key Argument:**
+
+In the RTC model, perception is a time-dependent process, and the experience of time itself is inherently tied to perception. The perception set, $P(t)$, evolves over time, and time is represented as a dynamic unfolding within the set of perceptions. Since perception is inseparable from the passage of time (being a function of the brain's wave passing through the holographic field), time and perception are not separate dimensions but are intrinsically coupled.
+
+# **Mathematical Approach:**
+
+**1. Perception as a Time-Dependent Function**
+
+In RTC, the perception set $P(t)$ represents how we experience the world at any moment in time, and it is governed by the equation:
+
+$$
+P(t) = \frac{d}{dt}(E(t))
+$$ where $E(t)$ is the integral experience, as discussed before.
+
+Now, let's consider the definition of time in the RTC context. Time $t$ is not something that exists as an independent entity. Instead, it is a measure of the change in perception over the integral experience. That is, time is the rate of change of the perception set, which can be written as:
+
+$$
+t = \frac{d}{dt}(P(t))
+$$
+
+This equation shows that time is derived from the perception set. Specifically, time is a measure of the progression or unfolding of perception. As the brain interacts with the holographic field, the passage of time is felt as the unfolding of perception.
+
+**2. Time as a Function of Perception**
+
+The key insight here is that time and perception are both functions of the same underlying process: the modulation of the brain's wave $B(t)$ interacting with the holographic field $F(t)$. Therefore, time is not a separate fundamental entity but is a derivative of perception. We can now show that time itself emerges as a consequence of the perception set, which is itself a time-dependent process:
+
+$$
+t = \frac{d}{dt}(P(t)) = \frac{d}{dt}\left(\frac{d}{dt}(E(t))\right)
+$$
+
+This establishes that time is an intrinsic property of perception and emerges directly from it, making the introduction of a separate "time" set unnecessary.
+
+**3. Perception as the Emergent Measure of Time**
+
+To make the case that introducing a different "time" set is redundant, I'll examine the relationship between time and perception from a more abstract perspective. Since perception is a time-dependent phenomenon, it already encodes the passage of time in its unfolding over moments. The rate of change of perception $P(t)$ gives us the temporal progression, which is what we experience as time. Therefore, the set of perceptions $P(t)$ serves as both a description of the phenomenon of perception and the progression of time. In other words, we cannot separate the two because the perception set already includes the temporal dimension. The perception set contains both what is perceived (the contents of consciousness) and when it is perceived (the unfolding of time).
+
+**4. The Redundancy of a Separate "Time" Set**
+
+If we introduce a separate time set, it would have to be defined independently from the perception set. However, this would be redundant because time is already accounted for by the evolution of perception. The set of perceptions $P(t)$ inherently evolves over time, and time is simply the rate of this evolution. Introducing a different "time" set would imply an additional, independent entity that does not provide any further explanatory value.
+
+### **R-Code Visualization of RTC Experiences**
+
+```{r}
+#| label: load-packages
+#| message: false
+#| include: false
+library(ggplot2)
+library(patchwork)
+library(gt)
+```
+
+**Define time sequence and function to generate experiences and perceptions**
+
+```{r}
+#| label: define-data
+#| code-fold: true
+ 
+# Define time sequence
+time <- seq(0, 10, by = 0.01)  # Time range from 0 to 10 with small increments
+
+# Function to generate different integral experiences and compute perceptions
+generate_experience <- function(freq1, freq2, phase1 = 0, phase2 = 0) {
+  E_t <- sin(2 * pi * freq1 * time + phase1) + 0.5 * sin(2 * pi * freq2 * time + phase2)
+  deriv_indices <- seq(1, length(time), length.out = 10)
+  P_t <- rep(NA, length(time))
+  P_t[deriv_indices[-length(deriv_indices)]] <- diff(E_t[deriv_indices]) / diff(time[deriv_indices])
+  
+  list(E_t = E_t, P_t = P_t, deriv_indices = deriv_indices)
+}
+```
+
+**Generate 5 different Experiences** $E(t)$ with their derivative Perceptions $P(t)$
+
+```{r}
+#| label: generate-data-plot
+#| code-fold: true
+#| warning: false
+# Generate 5 different experiences
+experiences <- list(
+  generate_experience(1, 3),
+  generate_experience(2, 4),
+  generate_experience(3, 5),
+  generate_experience(1, 2, pi/4),
+  generate_experience(2, 3, pi/2)
+)
+
+# Create plots
+plots <- lapply(1:5, function(i) {
+  E_t <- experiences[[i]]$E_t
+  P_t <- experiences[[i]]$P_t
+  deriv_indices <- experiences[[i]]$deriv_indices
+  
+  data <- data.frame(time = time, E_t = E_t, P_t = P_t)
+  deriv_data <- data.frame(time = time[deriv_indices[-length(deriv_indices)]],
+                           P_t = P_t[deriv_indices[-length(deriv_indices)]])
+  
+  ggplot(data, aes(x = time)) +
+    geom_line(aes(y = E_t, color = "Integral Experience E(t)"), size = 1) +
+    geom_point(data = deriv_data, aes(y = P_t, color = "Perception P(t)"), size = 3, shape = 16, na.rm = TRUE) +
+    geom_line(data = deriv_data, aes(y = P_t, color = "Perception P(t)"), size = 1, linetype = "dashed", na.rm = TRUE) +
+    labs(title = paste("Experience", i),
+         x = "Time (t) = Perception (p)", y = "Amplitude",
+         color = "Legend") +
+    theme_minimal() +
+    scale_color_manual(values = c("blue", "red")) +
+    theme(
+      legend.position = "bottom"
+    )
+})
+
+```
+
+**5 lineplots of the relationship between the integral of experience** $E(t)$ and its derivative perception $P(t)$
+
+```{r}
+#| label: fig-experience-perception
+#| fig-width: 10
+#| fig-height: 10
+#| fig-alt: | 
+#|  5 lineplots of the relationship between the integral of experience and its derivative perception.
+#| fig-cap: |
+#|  5 lineplots of experience and perception according to the Resonance Theory of Consciousness.
+#| code-fold: true
+#| warning: false
+
+# Combine plots using patchwork
+final_plot <- wrap_plots(plots) + plot_annotation(title = "Visualization of 5 Different RTC Experiences") +
+  plot_layout(ncol = 2) +
+  plot_annotation(tag_levels = "A") + 
+  plot_layout(guides = "collect") &
+  theme_bw() +
+  theme(legend.position = "bottom")
+
+# Print final visualization
+print(final_plot)
+
+```
+
+# Conclusion
+
+By demonstrating that time $(t)$ is a derivative of the perception set $P(t)$ and not an independent set, we see that the perception set and time are inseparable in the RTC model. The unfolding of perception over time defines time itself. Therefore, a separate "time" set, apart from the perception set, would be unnecessary and redundant, since time is already encoded within the perception set.
+
+The Set-Theory Mathematical Model of RCT provides a formal foundation for understanding consciousness as a dynamic interplay of vibrations in a holographic field. The visualization demonstrates how perception arises as a derivative of integral experience and aligns with the RCT proposition that time is unnecessary as an independent set. This model offers a novel approach to resolving the Hard Problem of Consciousness. The perception set $P(t)$ captures both the unfolding of experience (the contents of consciousness) and the passage of time, rendering any additional time set superfluous. Thus, the introduction of a separate "time" set in the RTC model is both unnecessary and redundant.
+
+# References
