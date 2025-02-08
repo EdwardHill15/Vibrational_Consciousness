@@ -353,6 +353,7 @@ plot_1_anim <- ggplot(data, aes(x = time)) +
 animate(plot_1_anim, fps = 30, duration = 5, renderer = gifski_renderer())
 ```
 
+
 # Conclusion
 
 By demonstrating that time $(t)$ is a derivative of the perception set $P(t)$ and not an independent set, we see that the perception set and time are inseparable in the RTC model. The unfolding of perception over time defines time itself. Therefore, a separate "time" set, apart from the perception set, would be unnecessary and redundant, since time is already encoded within the perception set.
