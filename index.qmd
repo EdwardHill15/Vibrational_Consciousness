@@ -33,7 +33,6 @@ bibliography: bibliography.bib
 nocite: |
   @*
 ---
-
 ![Source: https://www.the-scientist.com/tag/consciousness](vibration3.png){fig-align="center"}
 
 ## **Introduction**
@@ -197,6 +196,11 @@ If we introduce a separate time set, it would have to be defined independently f
 library(ggplot2)
 library(patchwork)
 library(gt)
+library(showtext)
+library(ggtext)
+library(gganimate)
+library(gifski)  # Ensure gifski is installed
+library(transformr)
 ```
 
 **Define time sequence and function to generate experiences and perceptions**
@@ -255,12 +259,12 @@ plots <- lapply(1:5, function(i) {
     scale_color_manual(values = c("blue", "red")) +
     theme(
       legend.position = "bottom"
-    )
+    ) 
 })
 
 ```
 
-**5 lineplots of the relationship between the integral of experience** $E(t)$ and its derivative perception $P(t)$
+**5 lineplots of the relationship between the integral of experience $E(t)$ and its derivative perception $P(t)$**
 
 ```{r}
 #| label: fig-experience-perception
@@ -284,6 +288,69 @@ final_plot <- wrap_plots(plots) + plot_annotation(title = "Visualization of 5 Di
 # Print final visualization
 print(final_plot)
 
+```
+
+
+**An animation of the Experience $E(t)$ and its derivative perception $P(t)$**
+
+```{r}
+#| label: anim-experience-perception
+#| fig-width: 10
+#| fig-height: 10
+#| fig-cap: "Animation of experience and perception according to the Resonance Theory of Consciousness."
+#| echo: false
+#| results: 'asis'
+#| code-fold: true
+#| warning: false 
+
+# Define time sequence
+time <- seq(0, 10, by = 0.01)
+
+# Function to generate experience and perception
+generate_experience <- function(freq1, freq2, phase1 = 0, phase2 = 0) {
+  E_t <- sin(2 * pi * freq1 * time + phase1) + 0.5 * sin(2 * pi * freq2 * time + phase2)
+  deriv_indices <- seq(1, length(time), length.out = 10)
+  P_t <- rep(NA, length(time))
+  P_t[deriv_indices[-length(deriv_indices)]] <- diff(E_t[deriv_indices]) / diff(time[deriv_indices])
+  
+  list(E_t = E_t, P_t = P_t, deriv_indices = deriv_indices)
+}
+
+# Generate experience
+experience <- generate_experience(1, 3)
+
+# Extract experience data
+E_t <- experience$E_t
+P_t <- experience$P_t
+deriv_indices <- experience$deriv_indices
+
+# Create data frames for plotting
+data <- data.frame(time = time, E_t = E_t, P_t = P_t)
+deriv_data <- data.frame(time = time[deriv_indices[-length(deriv_indices)]],
+                         P_t = P_t[deriv_indices[-length(deriv_indices)]])
+
+# Create the animated plot
+plot_1_anim <- ggplot(data, aes(x = time)) +
+  geom_line(aes(y = E_t, color = "Integral Experience E(t)"), linewidth = 1.5) +
+  geom_point(data = deriv_data, aes(y = P_t, color = "Perception P(t)"), size = 8, shape = 16, na.rm = TRUE) +
+  geom_line(data = deriv_data, aes(y = P_t, color = "Perception P(t)"), linewidth = 1.5, linetype = "dashed", na.rm = TRUE) +
+  labs(title = "Experience-Perception Process Animation",
+       x = "Time (t)", y = "Amplitude",
+       color = "Legend") +
+  theme_minimal() +
+  scale_color_manual(values = c("blue", "red")) +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_text(size = 16, face = "bold"),  
+    legend.text = element_text(size = 14),                 
+    plot.title = element_text(size = 30, face = "bold"),       
+    axis.title = element_text(size = 16),                      
+    axis.text = element_text(size = 14)                        
+  ) +
+  transition_reveal(time)  
+
+# **animation as GIF**
+animate(plot_1_anim, fps = 30, duration = 5, renderer = gifski_renderer())
 ```
 
 # Conclusion
